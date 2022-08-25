@@ -1,0 +1,152 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch SnowGum (Debug)",
+			"request": "launch",
+			"program": "G:\\Unreal Engine 5 Projects\\SnowGum\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+			"preLaunchTask": "SnowGum Win64 Debug Build",
+			"args": [
+			],
+			"cwd": "P:\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "P:\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "P:\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch SnowGum (DebugGame)",
+			"request": "launch",
+			"program": "G:\\Unreal Engine 5 Projects\\SnowGum\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+			"preLaunchTask": "SnowGum Win64 DebugGame Build",
+			"args": [
+			],
+			"cwd": "P:\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "P:\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "P:\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch SnowGum (Development)",
+			"request": "launch",
+			"program": "G:\\Unreal Engine 5 Projects\\SnowGum\\Binaries\\Win64\\UnrealGame.exe",
+			"preLaunchTask": "SnowGum Win64 Development Build",
+			"args": [
+			],
+			"cwd": "P:\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "P:\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "P:\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch SnowGum (Test)",
+			"request": "launch",
+			"program": "G:\\Unreal Engine 5 Projects\\SnowGum\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+			"preLaunchTask": "SnowGum Win64 Test Build",
+			"args": [
+			],
+			"cwd": "P:\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "P:\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "P:\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch SnowGum (Shipping)",
+			"request": "launch",
+			"program": "G:\\Unreal Engine 5 Projects\\SnowGum\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+			"preLaunchTask": "SnowGum Win64 Shipping Build",
+			"args": [
+			],
+			"cwd": "P:\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "P:\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "P:\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch SnowGumEditor (Debug)",
+			"request": "launch",
+			"program": "P:\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+			"preLaunchTask": "SnowGumEditor Win64 Debug Build",
+			"args": [
+				"G:\\Unreal Engine 5 Projects\\SnowGum\\SnowGum.uproject"
+			],
+			"cwd": "P:\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "P:\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "P:\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch SnowGumEditor (DebugGame)",
+			"request": "launch",
+			"program": "P:\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+			"preLaunchTask": "SnowGumEditor Win64 DebugGame Build",
+			"args": [
+				"G:\\Unreal Engine 5 Projects\\SnowGum\\SnowGum.uproject"
+			],
+			"cwd": "P:\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "P:\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "P:\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch SnowGumEditor (Development)",
+			"request": "launch",
+			"program": "P:\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+			"preLaunchTask": "SnowGumEditor Win64 Development Build",
+			"args": [
+				"G:\\Unreal Engine 5 Projects\\SnowGum\\SnowGum.uproject"
+			],
+			"cwd": "P:\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "P:\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "P:\\UE_5.0"
+			}
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "coreclr",
+			"request": "launch",
+			"program": "P:\\UE_5.0\\Engine\\Binaries\\DotNET\\UnrealBuildTool\\UnrealBuildTool",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=G:\\Unreal Engine 5 Projects\\SnowGum\\SnowGum.uproject",
+				"-game",
+				"-engine"
+			],
+			"console": "externalTerminal",
+			"stopAtEntry": false,
+			"cwd": "P:\\UE_5.0"
+		}
+	]
+}
