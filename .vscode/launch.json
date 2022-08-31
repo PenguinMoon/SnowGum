@@ -4,7 +4,7 @@
 		{
 			"name": "Launch SnowGum (Debug)",
 			"request": "launch",
-			"program": "G:\\Unreal Engine 5 Projects\\SnowGum\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+			"program": "C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
 			"preLaunchTask": "SnowGum Win64 Debug Build",
 			"args": [
 			],
@@ -20,7 +20,7 @@
 		{
 			"name": "Launch SnowGum (DebugGame)",
 			"request": "launch",
-			"program": "G:\\Unreal Engine 5 Projects\\SnowGum\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+			"program": "C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
 			"preLaunchTask": "SnowGum Win64 DebugGame Build",
 			"args": [
 			],
@@ -36,7 +36,7 @@
 		{
 			"name": "Launch SnowGum (Development)",
 			"request": "launch",
-			"program": "G:\\Unreal Engine 5 Projects\\SnowGum\\Binaries\\Win64\\UnrealGame.exe",
+			"program": "C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\Binaries\\Win64\\UnrealGame.exe",
 			"preLaunchTask": "SnowGum Win64 Development Build",
 			"args": [
 			],
@@ -52,7 +52,7 @@
 		{
 			"name": "Launch SnowGum (Test)",
 			"request": "launch",
-			"program": "G:\\Unreal Engine 5 Projects\\SnowGum\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+			"program": "C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
 			"preLaunchTask": "SnowGum Win64 Test Build",
 			"args": [
 			],
@@ -68,7 +68,7 @@
 		{
 			"name": "Launch SnowGum (Shipping)",
 			"request": "launch",
-			"program": "G:\\Unreal Engine 5 Projects\\SnowGum\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+			"program": "C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
 			"preLaunchTask": "SnowGum Win64 Shipping Build",
 			"args": [
 			],
@@ -87,7 +87,7 @@
 			"program": "P:\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
 			"preLaunchTask": "SnowGumEditor Win64 Debug Build",
 			"args": [
-				"G:\\Unreal Engine 5 Projects\\SnowGum\\SnowGum.uproject"
+				"C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\SnowGum.uproject"
 			],
 			"cwd": "P:\\UE_5.0",
 			"stopAtEntry": false,
@@ -104,7 +104,7 @@
 			"program": "P:\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
 			"preLaunchTask": "SnowGumEditor Win64 DebugGame Build",
 			"args": [
-				"G:\\Unreal Engine 5 Projects\\SnowGum\\SnowGum.uproject"
+				"C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\SnowGum.uproject"
 			],
 			"cwd": "P:\\UE_5.0",
 			"stopAtEntry": false,
@@ -121,7 +121,7 @@
 			"program": "P:\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
 			"preLaunchTask": "SnowGumEditor Win64 Development Build",
 			"args": [
-				"G:\\Unreal Engine 5 Projects\\SnowGum\\SnowGum.uproject"
+				"C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\SnowGum.uproject"
 			],
 			"cwd": "P:\\UE_5.0",
 			"stopAtEntry": false,
@@ -140,7 +140,7 @@
 			"args": [
 				"-projectfiles",
 				"-vscode",
-				"-project=G:\\Unreal Engine 5 Projects\\SnowGum\\SnowGum.uproject",
+				"-project=C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\SnowGum.uproject",
 				"-game",
 				"-engine"
 			],

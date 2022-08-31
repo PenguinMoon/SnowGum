@@ -1,27 +1,37 @@
 [
 	{
-		"file": "G:\\Unreal Engine 5 Projects\\SnowGum\\Source\\SnowGum\\SnowGum.Build.cs",
-		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @\"G:\\Unreal Engine 5 Projects\\SnowGum\\.vscode\\compileCommands_SnowGum\\SnowGum.211.rsp\"",
+		"file": "C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\Source\\SnowGum\\SnowGum.Build.cs",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\.vscode\\compileCommands_SnowGum\\SnowGum.211.rsp",
 		"directory": "P:\\UE_5.0\\Engine\\Source"
 	},
 	{
-		"file": "G:\\Unreal Engine 5 Projects\\SnowGum\\Source\\SnowGum\\SnowGum.cpp",
-		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @\"G:\\Unreal Engine 5 Projects\\SnowGum\\.vscode\\compileCommands_SnowGum\\SnowGum.211.rsp\"",
+		"file": "C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\Source\\SnowGum\\SnowGum.cpp",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\.vscode\\compileCommands_SnowGum\\SnowGum.211.rsp",
 		"directory": "P:\\UE_5.0\\Engine\\Source"
 	},
 	{
-		"file": "G:\\Unreal Engine 5 Projects\\SnowGum\\Source\\SnowGum\\SnowGum.h",
-		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @\"G:\\Unreal Engine 5 Projects\\SnowGum\\.vscode\\compileCommands_SnowGum\\SnowGum.211.rsp\"",
+		"file": "C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\Source\\SnowGum\\SnowGum.h",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\.vscode\\compileCommands_SnowGum\\SnowGum.211.rsp",
 		"directory": "P:\\UE_5.0\\Engine\\Source"
 	},
 	{
-		"file": "G:\\Unreal Engine 5 Projects\\SnowGum\\Source\\SnowGum\\SnowGumGameModeBase.cpp",
-		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @\"G:\\Unreal Engine 5 Projects\\SnowGum\\.vscode\\compileCommands_SnowGum\\SnowGum.211.rsp\"",
+		"file": "C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\Source\\SnowGum\\SnowGumGameModeBase.cpp",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\.vscode\\compileCommands_SnowGum\\SnowGum.211.rsp",
 		"directory": "P:\\UE_5.0\\Engine\\Source"
 	},
 	{
-		"file": "G:\\Unreal Engine 5 Projects\\SnowGum\\Source\\SnowGum\\SnowGumGameModeBase.h",
-		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @\"G:\\Unreal Engine 5 Projects\\SnowGum\\.vscode\\compileCommands_SnowGum\\SnowGum.211.rsp\"",
+		"file": "C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\Source\\SnowGum\\SnowGumGameModeBase.h",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\.vscode\\compileCommands_SnowGum\\SnowGum.211.rsp",
+		"directory": "P:\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\Source\\SnowGum\\ThirdPersonController.cpp",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\.vscode\\compileCommands_SnowGum\\SnowGum.211.rsp",
+		"directory": "P:\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\Source\\SnowGum\\ThirdPersonController.h",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\.vscode\\compileCommands_SnowGum\\SnowGum.211.rsp",
 		"directory": "P:\\UE_5.0\\Engine\\Source"
 	}
 ]

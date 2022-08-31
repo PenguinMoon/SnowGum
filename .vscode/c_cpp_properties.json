@@ -1,14 +1,19 @@
 {
-	"configurations": [
-		{
-			"name": "SnowGumEditor Editor Win64 Development (SnowGum)",
-			"intelliSenseMode": "msvc-x64",
-			"compileCommands": "G:\\Unreal Engine 5 Projects\\SnowGum\\.vscode\\compileCommands_SnowGum.json"
-		},
-		{
-			"name": "Win32",
-			"intelliSenseMode": "msvc-x64",
-			"compileCommands": "G:\\Unreal Engine 5 Projects\\SnowGum\\.vscode\\compileCommands_Default.json"
-		}
-	]
+    "configurations": [
+        {
+            "name": "SnowGumEditor Editor Win64 Development (SnowGum)",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\.vscode\\compileCommands_SnowGum.json",
+            "cStandard": "c17",
+            "cppStandard": "c++17"
+        },
+        {
+            "name": "Win32",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "C:\\Users\\Sparkilicious\\Documents\\Github\\SnowGum\\.vscode\\compileCommands_Default.json",
+            "cStandard": "c17",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
 }
