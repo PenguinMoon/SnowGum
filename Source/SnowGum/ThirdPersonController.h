@@ -26,9 +26,37 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+//Controller Bindings
+private:
+
+	/**
+	 * Binds to the "MoveForward" input axis to receive the axis value and multiplies it by
+	 * the character's forward vector.
+	 * This value is then given to the function AddCharacterInput();
+	 * @param value 
+	 */
 	void MoveForward(float value);
 
+	/**
+	 * Binds to the "MoveRight" input axis to receive the axis value and multiplies it by
+	 * the character's right vector.
+	 * This value is then given to the function AddCharacterInput();
+	 * @param value 
+	 */
 	void MoveRight(float value);
 
-	void Zoom(float value);
+	/**
+	 * Binds to the "LookUpRate" input axis to receive the axis value.
+	 * @param rate 
+	 */
+	void LookUpRate(float rate);
+
+	/**
+	 * Binds to the "LookRightRate" input axis to receive the axis value.
+	 * @param rate 
+	 */
+	void LookRightRate(float rate);
+
+	UPROPERTY(EditAnywhere)
+	float RotationRate = 10;
 };

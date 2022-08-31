@@ -22,15 +22,35 @@ void AThirdPersonController::BeginPlay()
 void AThirdPersonController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	
 }
 
 // Called to bind functionality to input
 void AThirdPersonController::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-	//PlayerInputComponent->BindAxis(TEXT("Forward"), this);
-	//PlayerInputComponent->BindAxis(TEXT("Right"), this)
-	//PlayerInputComponent->BindAxis(TEXT("Zoom"), this);
+	PlayerInputComponent->BindAxis(TEXT("MoveForward"), this, &AThirdPersonController::MoveForward);
+	PlayerInputComponent->BindAxis(TEXT("MoveRight"), this, &AThirdPersonController::MoveRight);
+
+	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &APawn::AddControllerPitchInput);
+	PlayerInputComponent->BindAxis(TEXT("LookRight"), this, &APawn::AddControllerYawInput);
+	
+	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
 }
 
+#pragma region InputBindings
+
+/* Binds forward movement to the "MoveForward" axis
+*/
+void AThirdPersonController::MoveForward(float value){
+	AddMovementInput(GetActorForwardVector() * value);
+	
+}
+
+/* Binds right movement to the "MoveRight" axis.
+*/
+void AThirdPersonController::MoveRight(float value){
+	AddMovementInput(GetActorRightVector() * value);
+}
+
+#pragma endregion InputBindings
