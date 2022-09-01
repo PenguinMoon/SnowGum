@@ -31,26 +31,35 @@ void AThirdPersonController::SetupPlayerInputComponent(UInputComponent* PlayerIn
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 	PlayerInputComponent->BindAxis(TEXT("MoveForward"), this, &AThirdPersonController::MoveForward);
 	PlayerInputComponent->BindAxis(TEXT("MoveRight"), this, &AThirdPersonController::MoveRight);
-
+	
+	//For controller input
+	PlayerInputComponent->BindAxis(TEXT("LookUpRate"), this, &AThirdPersonController::LookUpRate);
+	PlayerInputComponent->BindAxis(TEXT("LookRightRate"), this, &AThirdPersonController::LookRightRate);
+	
+	//For mouse input
 	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis(TEXT("LookRight"), this, &APawn::AddControllerYawInput);
-	
+
 	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
 }
 
 #pragma region InputBindings
 
-/* Binds forward movement to the "MoveForward" axis
-*/
 void AThirdPersonController::MoveForward(float value){
 	AddMovementInput(GetActorForwardVector() * value);
 	
 }
 
-/* Binds right movement to the "MoveRight" axis.
-*/
 void AThirdPersonController::MoveRight(float value){
 	AddMovementInput(GetActorRightVector() * value);
+}
+
+void AThirdPersonController::LookUpRate(float rate){
+	AddControllerPitchInput(rate * RotationRate * GetWorld()->GetDeltaSeconds());
+}
+
+void AThirdPersonController::LookRightRate(float rate){
+	AddControllerYawInput(rate * RotationRate * GetWorld()->GetDeltaSeconds());
 }
 
 #pragma endregion InputBindings
