@@ -26,8 +26,10 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-//Controller Bindings
 private:
+
+	UPROPERTY(EditAnywhere)
+	float RotationRate = 10;
 
 	/**
 	 * Binds to the "MoveForward" input axis to receive the axis value and multiplies it by
@@ -57,6 +59,5 @@ private:
 	 */
 	void LookRightRate(float rate);
 
-	UPROPERTY(EditAnywhere)
-	float RotationRate = 10;
+	void Attack();
 };

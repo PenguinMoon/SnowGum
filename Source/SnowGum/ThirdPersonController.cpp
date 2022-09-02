@@ -29,6 +29,8 @@ void AThirdPersonController::Tick(float DeltaTime)
 void AThirdPersonController::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
+
+	//Axis Input
 	PlayerInputComponent->BindAxis(TEXT("MoveForward"), this, &AThirdPersonController::MoveForward);
 	PlayerInputComponent->BindAxis(TEXT("MoveRight"), this, &AThirdPersonController::MoveRight);
 	
@@ -39,8 +41,10 @@ void AThirdPersonController::SetupPlayerInputComponent(UInputComponent* PlayerIn
 	//For mouse input
 	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis(TEXT("LookRight"), this, &APawn::AddControllerYawInput);
-
+	
+	//Action Input
 	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
+	PlayerInputComponent->BindAction(TEXT("Attack"), EInputEvent::IE_Pressed, this, &AThirdPersonController::Attack);
 }
 
 #pragma region InputBindings
@@ -62,4 +66,9 @@ void AThirdPersonController::LookRightRate(float rate){
 	AddControllerYawInput(rate * RotationRate * GetWorld()->GetDeltaSeconds());
 }
 
+void AThirdPersonController::Attack(){
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Attack"));
+}
+
 #pragma endregion InputBindings
+
