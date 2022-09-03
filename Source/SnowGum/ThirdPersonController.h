@@ -31,6 +31,9 @@ private:
 	UPROPERTY(EditAnywhere)
 	float RotationRate = 10;
 
+	UPROPERTY(VisibleAnywhere)
+	bool IsAiming = false;
+
 	/**
 	 * Binds to the "MoveForward" input axis to receive the axis value and multiplies it by
 	 * the character's forward vector.
@@ -60,4 +63,9 @@ private:
 	void LookRightRate(float rate);
 
 	void Attack();
+
+	void AimBow();
+
+	void ReleaseAim();
+	
 };

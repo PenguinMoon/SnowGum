@@ -45,6 +45,8 @@ void AThirdPersonController::SetupPlayerInputComponent(UInputComponent* PlayerIn
 	//Action Input
 	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction(TEXT("Attack"), EInputEvent::IE_Pressed, this, &AThirdPersonController::Attack);
+	PlayerInputComponent->BindAction(TEXT("Aim"), EInputEvent::IE_Pressed, this, &AThirdPersonController::AimBow);
+	PlayerInputComponent->BindAction(TEXT("Aim"), EInputEvent::IE_Released, this, &AThirdPersonController::ReleaseAim);
 }
 
 #pragma region InputBindings
@@ -66,8 +68,32 @@ void AThirdPersonController::LookRightRate(float rate){
 	AddControllerYawInput(rate * RotationRate * GetWorld()->GetDeltaSeconds());
 }
 
-void AThirdPersonController::Attack(){
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Attack"));
+void AThirdPersonController::Attack()
+{
+	if(IsAiming)
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Fire Bow"));
+
+	if(!IsAiming)
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Bow not aimed"));
+}
+
+void AThirdPersonController::AimBow()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Aiming"));
+	IsAiming = true;
+	/* we also need to do some camera work here too.
+		We need teh camera to zoom in when the aim begins.
+	*/
+}
+
+void AThirdPersonController::ReleaseAim()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Aiming ended"));
+	IsAiming = false;
+	/* In here we need to bring the camera back to its default position.
+
+	
+	*/
 }
 
 #pragma endregion InputBindings
