@@ -70,11 +70,20 @@ void AThirdPersonController::LookRightRate(float rate){
 
 void AThirdPersonController::Attack()
 {
-	if(IsAiming)
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Fire Bow"));
+	if(!HasWeapon){
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("No weapon to fire from"));
+		return;
+	}
 
-	if(!IsAiming)
+	if(!IsAiming){
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Bow not aimed"));
+		return;
+	}
+
+	if(IsAiming){
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Fire Bow"));
+		return;
+	}
 }
 
 void AThirdPersonController::AimBow()
@@ -82,7 +91,7 @@ void AThirdPersonController::AimBow()
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Aiming"));
 	IsAiming = true;
 	/* we also need to do some camera work here too.
-		We need teh camera to zoom in when the aim begins.
+		We need the camera to zoom in when the aim begins.
 	*/
 }
 
@@ -92,7 +101,8 @@ void AThirdPersonController::ReleaseAim()
 	IsAiming = false;
 	/* In here we need to bring the camera back to its default position.
 
-	
+		We also need to bring the bow out of its aiming state
+
 	*/
 }
 

@@ -32,6 +32,9 @@ private:
 	float RotationRate = 10;
 
 	UPROPERTY(VisibleAnywhere)
+	bool HasWeapon = false;
+
+	UPROPERTY(VisibleAnywhere)
 	bool IsAiming = false;
 
 	/**
@@ -67,5 +70,5 @@ private:
 	void AimBow();
 
 	void ReleaseAim();
-	
+
 };
