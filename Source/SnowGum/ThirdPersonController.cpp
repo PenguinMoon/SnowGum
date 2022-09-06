@@ -49,8 +49,6 @@ void AThirdPersonController::SetupPlayerInputComponent(UInputComponent* PlayerIn
 	PlayerInputComponent->BindAction(TEXT("Aim"), EInputEvent::IE_Released, this, &AThirdPersonController::ReleaseAim);
 }
 
-#pragma region InputBindings
-
 void AThirdPersonController::MoveForward(float value){
 	AddMovementInput(GetActorForwardVector() * value);
 	
@@ -105,6 +103,3 @@ void AThirdPersonController::ReleaseAim()
 
 	*/
 }
-
-#pragma endregion InputBindings
-

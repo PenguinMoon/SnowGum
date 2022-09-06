@@ -32,8 +32,6 @@ void ASkaterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	PlayerInputComponent->BindAxis("LookRight", this, &APawn::AddControllerYawInput);
 }
 
-#pragma region InputBindings
-
 // Binds to the forward axis
 void ASkaterCharacter::MoveForward(float value){
 	AddMovementInput(GetActorForwardVector() * value);
@@ -52,5 +50,3 @@ void ASkaterCharacter::ZoomCamera(float value){
 		For this we will need to first setup the camera varaible.
 	*/
 }
-
-#pragma endregion InputBindings

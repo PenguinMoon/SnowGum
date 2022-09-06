@@ -38,6 +38,4 @@ private:
 	void ZoomCamera(float value);
 
 	void RotateCamera(float value);
-
-	float ZoomMultiplier;
 };

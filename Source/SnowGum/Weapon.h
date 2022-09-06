@@ -80,11 +80,11 @@ private:
 	 */
 	float drawTime;
 
-	/**
-	 * @brief The current arrow kind the bow is firing.
-	 * 
-	 */
-	AArrow currentAmmo;
+	// /**
+	//  * @brief The current arrow kind the bow is firing.
+	//  * 
+	//  */
+	// AArrow* currentAmmo;
 
 	bool isAiming;
 
